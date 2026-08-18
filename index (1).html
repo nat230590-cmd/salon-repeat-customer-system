@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salon Repeat Customer System</title>
+<style>
+:root{
+  --ink:#17131a;
+  --muted:#6f6670;
+  --paper:#fffaf7;
+  --card:#ffffff;
+  --accent:#8b3d68;
+  --accent-dark:#6d2d50;
+  --soft:#f5e8ef;
+  --line:#eadde4;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+.container{max-width:1080px;margin:auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font-weight:800;letter-spacing:-.5px}
+.badge{font-size:13px;background:var(--soft);color:var(--accent-dark);padding:8px 12px;border-radius:999px}
+.hero{padding:70px 0 64px;text-align:center}
+.eyebrow{display:inline-block;color:var(--accent-dark);font-weight:700;font-size:14px;margin-bottom:18px}
+h1{font-size:clamp(42px,7vw,72px);line-height:1.02;letter-spacing:-3px;max-width:850px;margin:0 auto 22px}
+.hero p{font-size:20px;color:var(--muted);max-width:700px;margin:0 auto 32px}
+.cta{display:inline-flex;background:var(--accent);color:#fff;text-decoration:none;padding:15px 24px;border-radius:12px;font-weight:800;box-shadow:0 8px 24px rgba(139,61,104,.22)}
+.cta:hover{background:var(--accent-dark)}
+.micro{font-size:13px;color:var(--muted);margin-top:13px}
+.section{padding:70px 0}
+.section h2{text-align:center;font-size:38px;letter-spacing:-1.4px;margin:0 0 12px}
+.section-lead{text-align:center;color:var(--muted);max-width:680px;margin:0 auto 38px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{margin:0 0 8px;font-size:19px}
+.card p{margin:0;color:var(--muted)}
+.workflow{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:35px}
+.step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 10px;text-align:center;font-size:13px;font-weight:700}
+.step span{display:block;color:var(--accent);font-size:20px;margin-bottom:5px}
+.offer{background:var(--ink);color:#fff;border-radius:26px;padding:44px;display:grid;grid-template-columns:1.5fr .8fr;gap:35px;align-items:center}
+.offer h2{text-align:left;color:#fff;margin-bottom:14px}
+.offer p{color:#d9d0d6}
+.included{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.included div{font-size:14px}
+.price{text-align:center;background:#fff;color:var(--ink);border-radius:20px;padding:28px}
+.price small{color:var(--muted)}
+.price strong{display:block;font-size:48px;letter-spacing:-2px;margin:5px 0 14px}
+.price .cta{width:100%;justify-content:center}
+.faq{max-width:760px;margin:auto}
+.faq-item{border-top:1px solid var(--line);padding:20px 0}
+.faq-item:last-child{border-bottom:1px solid var(--line)}
+.faq-item h3{margin:0 0 7px;font-size:17px}
+.faq-item p{margin:0;color:var(--muted)}
+footer{text-align:center;padding:40px 0;color:var(--muted);font-size:13px}
+@media(max-width:800px){
+  .grid{grid-template-columns:1fr}
+  .workflow{grid-template-columns:repeat(2,1fr)}
+  .offer{grid-template-columns:1fr;padding:28px}
+  .included{grid-template-columns:1fr}
+  h1{letter-spacing:-2px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<nav>
+  <div class="logo">Salon Repeat Customer System</div>
+  <div class="badge">Early Access · ₹999 one-time</div>
+</nav>
+
+<section class="hero">
+  <div class="eyebrow">FOR INDEPENDENT SALONS & BEAUTY PARLOURS</div>
+  <h1>Get more repeat customers through WhatsApp — without monthly software.</h1>
+  <p>A practical customer-retention system to help you follow up with enquiries, rebook existing customers, and reconnect with inactive customers using the WhatsApp Business tools you already have.</p>
+  <a class="cta" href="#offer">Get Early Access — ₹999</a>
+  <div class="micro">No WhatsApp API required for the MVP · One-time payment</div>
+</section>
+
+<section class="section">
+  <h2>Are customers coming once and disappearing?</h2>
+  <p class="section-lead">The problem is often not getting another message out. It is having a simple system for what to do next.</p>
+  <div class="grid">
+    <div class="card"><h3>New enquiries go cold</h3><p>A customer asks about a service or price, but the follow-up gets missed.</p></div>
+    <div class="card"><h3>Rebooking gets forgotten</h3><p>The customer finishes a service, but nobody has a consistent next-visit workflow.</p></div>
+    <div class="card"><h3>Old customers disappear</h3><p>Customers who have not visited for 30–90 days are sitting in your contact list without a reactivation process.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>One simple customer journey</h2>
+  <p class="section-lead">Use ready-to-implement workflows instead of trying to remember what to send every time.</p>
+  <div class="workflow">
+    <div class="step"><span>01</span>Enquiry</div>
+    <div class="step"><span>02</span>Booking</div>
+    <div class="step"><span>03</span>Reminder</div>
+    <div class="step"><span>04</span>Visit</div>
+    <div class="step"><span>05</span>Rebook</div>
+    <div class="step"><span>06</span>Win-back</div>
+    <div class="step"><span>07</span>Referral</div>
+  </div>
+</section>
+
+<section class="section" id="offer">
+  <div class="offer">
+    <div>
+      <h2>Everything you need to start.</h2>
+      <p>Built as a practical DIY system for small salons — not another complicated CRM dashboard.</p>
+      <div class="included">
+        <div>✓ New enquiry follow-up workflow</div>
+        <div>✓ Booking & reminder workflow</div>
+        <div>✓ Post-service follow-up</div>
+        <div>✓ Rebooking system</div>
+        <div>✓ 30/60/90-day win-back system</div>
+        <div>✓ Review & referral workflow</div>
+        <div>✓ AI-assisted WhatsApp messages</div>
+        <div>✓ Customer tracking sheet</div>
+        <div>✓ 30-day content plan</div>
+        <div>✓ Implementation checklist</div>
+      </div>
+    </div>
+    <div class="price">
+      <small>Early Access</small>
+      <strong>₹999</strong>
+      <small>One-time payment</small>
+      <br><br>
+      <a class="cta" href="#checkout">Get Early Access</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Who is this for?</h2>
+  <div class="grid">
+    <div class="card"><h3>✓ Independent salons</h3><p>Small teams that want a simple customer follow-up process.</p></div>
+    <div class="card"><h3>✓ Beauty parlours</h3><p>Businesses that already use WhatsApp and want more consistency.</p></div>
+    <div class="card"><h3>✓ Home-based beauty businesses</h3><p>Owners who need practical workflows without adding another monthly tool.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="faq">
+    <h2>Simple by design</h2>
+    <div class="faq-item"><h3>Do I need WhatsApp API?</h3><p>No. The MVP is designed around WhatsApp Business and simple manual workflows.</p></div>
+    <div class="faq-item"><h3>Is this salon software?</h3><p>No. It is a DIY customer-retention system with workflows, templates, AI assistance and tracking tools.</p></div>
+    <div class="faq-item"><h3>Does it guarantee more sales?</h3><p>No. Results depend on your offer, customers, execution and market. The system is designed to make follow-up and retention activities easier and more consistent.</p></div>
+  </div>
+</section>
+
+<section class="section" id="checkout" style="text-align:center">
+  <h2>Ready to test a better follow-up system?</h2>
+  <p class="section-lead">Join the early-access version for ₹999. Payment and delivery will be connected after the offer is validated.</p>
+  <a class="cta" href="#offer">Get Early Access — ₹999</a>
+</section>
+
+<footer>
+  © 2026 Salon Repeat Customer System · Early-access validation page
+</footer>
+</div>
+</body>
+</html>
