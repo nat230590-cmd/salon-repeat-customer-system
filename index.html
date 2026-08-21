@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thinkitouch | WhatsApp Growth Quick Assessment</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap');
+:root{--navy:#0D1324;--pink:#FF2D6F;--purple:#6C5CE7;--blue:#2D9CDB;--gray:#F2F4F7;--muted:#667085;--line:#E4E7EC}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--navy);font-family:Inter,Arial,sans-serif;background:#fff;line-height:1.55;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:-20%;z-index:-2;background:radial-gradient(circle at 20% 20%,rgba(255,45,111,.10),transparent 28%),radial-gradient(circle at 80% 10%,rgba(108,92,231,.10),transparent 30%),radial-gradient(circle at 70% 80%,rgba(45,156,219,.08),transparent 25%);animation:bgMove 12s ease-in-out infinite alternate}
+@keyframes bgMove{to{transform:translate3d(2%,-2%,0) scale(1.03)}}
+main{max-width:1120px;margin:auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;position:relative}
+.logo{display:flex;align-items:center;height:52px}.logo img{display:block;width:auto;height:48px;max-width:260px;object-fit:contain}
+.badge{font:700 14px "Chakra Petch";color:var(--pink);background:#fff0f5;padding:9px 14px;border-radius:999px}
+.hero{position:relative;text-align:center;padding:74px 0 80px;min-height:620px;display:flex;flex-direction:column;justify-content:center}
+.orb{position:absolute;border-radius:50%;filter:blur(1px);opacity:.55;pointer-events:none}.orb.a{width:120px;height:120px;background:rgba(255,45,111,.13);left:4%;top:18%;animation:float 5s ease-in-out infinite}.orb.b{width:90px;height:90px;background:rgba(108,92,231,.13);right:7%;top:32%;animation:float 6s ease-in-out infinite reverse}
+@keyframes float{50%{transform:translateY(-18px) translateX(8px)}}
+.eyebrow{font:700 20px "Chakra Petch";color:var(--pink);margin-bottom:20px;animation:rise .7s both}
+h1{font:700 48px/1.08 "Chakra Petch";max-width:900px;margin:0 auto 22px;animation:rise .85s .08s both}
+.hero p{font:400 16px/1.75 Inter;max-width:720px;margin:0 auto 30px;color:var(--muted);animation:rise 1s .14s both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.btn{display:inline-block;background:var(--pink);color:#fff;padding:15px 25px;border-radius:12px;text-decoration:none;font:700 16px "Chakra Petch";box-shadow:0 10px 28px rgba(255,45,111,.22);transition:.25s;animation:pulse 2.6s 1.2s infinite}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(255,45,111,.30)}
+@keyframes pulse{50%{box-shadow:0 10px 34px rgba(255,45,111,.38)}}
+.micro{font:400 14px Inter;color:var(--muted);margin-top:13px}
+.chat{margin:40px auto 0;max-width:720px;display:grid;grid-template-columns:1fr 1fr;gap:14px;text-align:left}
+.bubble{padding:17px 18px;border-radius:18px;background:#fff;border:1px solid var(--line);box-shadow:0 12px 35px rgba(13,19,36,.07);animation:float 5.5s ease-in-out infinite}.bubble strong{font:700 20px "Chakra Petch";display:block;margin-bottom:4px}.bubble span{font:400 14px Inter;color:var(--muted)}.bubble.pink{border-color:#ffd0df}.bubble.pink strong{color:var(--pink)}
+.section{padding:70px 0}.section h2{font:700 36px/1.15 "Chakra Petch";text-align:center;margin:0 0 12px}.section-lead{text-align:center;color:var(--muted);max-width:720px;margin:0 auto 36px;font:400 16px/1.7 Inter}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(13,19,36,.08);border-color:#ffc3d6}.card h3{font:700 20px/1.25 "Chakra Petch";margin:0 0 8px}.card p{font:400 16px/1.65 Inter;margin:0;color:var(--muted)}
+.workflow{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}.step{background:var(--gray);border-radius:14px;padding:16px 8px;text-align:center;font:500 14px Inter;transition:.25s}.step span{display:block;font:700 20px "Chakra Petch";color:var(--pink);margin-bottom:5px}.step:hover{background:#fff0f5;transform:translateY(-4px)}
+.assessment{background:var(--navy);color:#fff;border-radius:28px;padding:48px;text-align:center;position:relative;overflow:hidden}.assessment:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:rgba(255,45,111,.13);right:-80px;top:-90px}.assessment h2{color:#fff;margin-bottom:12px}.assessment p{color:#D9DDE6;max-width:700px;margin:0 auto 24px;font:400 16px/1.7 Inter}.assessment .btn{position:relative;z-index:1}
+.quote{font:italic 22px "Chakra Petch";text-align:center;max-width:760px;margin:0 auto;color:var(--navy)}
+.faq{max-width:780px;margin:auto}.faq-item{border-top:1px solid var(--line);padding:20px 0}.faq-item h3{font:700 20px "Chakra Petch";margin:0 0 7px}.faq-item p{font:400 16px/1.65 Inter;margin:0;color:var(--muted)}
+footer{text-align:center;padding:40px 0;color:var(--muted);font:400 14px Inter}
+@media(max-width:800px){.logo img{height:40px;max-width:225px}nav{padding-top:18px}.badge{display:none}.hero{min-height:auto;padding:58px 0}.grid{grid-template-columns:1fr}.workflow{grid-template-columns:repeat(2,1fr)}h1{font-size:42px}.chat{grid-template-columns:1fr}.assessment{padding:34px 22px}}
+</style>
+
+<style>
+.brand-text{
+  display:inline-flex;
+  align-items:center;
+  font-family:'Chakra Petch',sans-serif;
+  font-size:30px;
+  line-height:1;
+  font-weight:700;
+  letter-spacing:-1.5px;
+  white-space:nowrap;
+}
+.brand-dark{color:#071535;}
+.brand-pink{color:#ff0a68;}
+@media(max-width:640px){
+  .brand-text{font-size:25px;letter-spacing:-1.2px;}
+}
+</style>
+
+</head>
+<body>
+<main>
+<nav>
+<div class="logo"><span class="brand-text"><span class="brand-dark">thinki</span><span class="brand-pink">touch</span></span></div>
+<div class="badge">Think Smarter. Grow Better.</div>
+</nav>
+
+<section class="hero">
+<div class="orb a"></div><div class="orb b"></div>
+<div class="eyebrow">THINKITOUCH · QUICK ASSESSMENT</div>
+<h1>Find out what is stopping your business from getting more repeat customers.</h1>
+<p>Answer a few practical questions about your business, WhatsApp follow-up, customer retention and marketing. Your answers will help us understand the real problems Indian SMBs face before we build the right solution.</p>
+<a class="btn" href="https://tally.so/r/ob87rx" target="_blank" rel="noopener">Take the Quick Assessment →</a>
+<div class="micro">Short assessment · No payment · No commitment</div>
+<div class="chat">
+<div class="bubble"><strong>💬 WhatsApp</strong><span>“Customer asked the price… but never replied.”</span></div>
+<div class="bubble pink"><strong>↻ Repeat customers</strong><span>“How do I bring inactive customers back?”</span></div>
+</div>
+</section>
+
+<section class="section">
+<h2>We are solving the real problem first.</h2>
+<p class="section-lead">Thinkitouch is being built around real business workflows — not assumptions.</p>
+<div class="grid">
+<div class="card"><h3>New enquiries go cold</h3><p>Follow-up gets missed after a customer asks about a service or price.</p></div>
+<div class="card"><h3>Rebooking gets forgotten</h3><p>There is no consistent next-visit workflow after a customer finishes a service.</p></div>
+<div class="card"><h3>Old customers disappear</h3><p>Inactive customers remain in contacts without a simple reactivation process.</p></div>
+</div>
+</section>
+
+<section class="section">
+<h2>One simple customer journey</h2>
+<p class="section-lead">This is the type of workflow we are exploring with early users.</p>
+<div class="workflow">
+<div class="step"><span>01</span>Enquiry</div><div class="step"><span>02</span>Booking</div><div class="step"><span>03</span>Reminder</div><div class="step"><span>04</span>Visit</div><div class="step"><span>05</span>Rebook</div><div class="step"><span>06</span>Win-back</div><div class="step"><span>07</span>Referral</div>
+</div>
+</section>
+
+<section class="section">
+<div class="assessment">
+<h2>Help us build the right Thinkitouch product.</h2>
+<p>Tell us how your business currently handles leads, WhatsApp conversations, follow-ups and repeat customers. Your feedback will directly shape what we build next.</p>
+<a class="btn" href="https://tally.so/r/ob87rx" target="_blank" rel="noopener">Start the Quick Assessment →</a>
+</div>
+</section>
+
+<section class="section">
+<p class="quote">“Think Smarter. Grow Better.”</p>
+</section>
+
+<section class="section">
+<div class="faq">
+<h2>Before you start</h2>
+<div class="faq-item"><h3>Is this a paid offer?</h3><p>No. This page is currently for a quick assessment and product validation.</p></div>
+<div class="faq-item"><h3>Do I need WhatsApp API?</h3><p>No. The assessment is simply about understanding your current business and customer-follow-up process.</p></div>
+<div class="faq-item"><h3>Who is this for?</h3><p>We are initially focusing on Indian SMBs, starting with salon and beauty businesses as an early use case.</p></div>
+</div>
+</section>
+
+<footer>© 2026 Thinkitouch · Think Smarter. Grow Better.</footer>
+</main>
+</body>
+</html>
